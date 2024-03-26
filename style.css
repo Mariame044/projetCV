@@ -1,3 +1,17 @@
+body{
+    width: 210mm;
+    min-height: 297mm;
+   
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+/* padding pour espace supplémentaire à l'intérieur d'un élément et  margin pour
+ espace supplémentaire à l'extérieur de l'élément */
 *{
     padding: 5;
     margin: 5;
@@ -7,33 +21,39 @@
 }
 
 /*  le syle du contenu */
+
 main{
+    
     min-height: 100vh;
     width: 80%;
     margin: 2rem auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 }
-/* le style de la section gauche */
+/* le style de la section gauche:
+ couleur des ecriture en blanche, la hauteur à 100%,couleur de l'arrière plan en bleu*/
 .left-section{
     color: white;
-    grid-column: span 2;
+    grid-column: span 3;
     height: 100%;
     background-color: #417694;
 }
-/* le style de la section droite */
+/* le style de la section droite:
+couleur des ecriture en noir, la hauteur à 100%,couleur de l'arrière plan en bblanche */
 .right-section{
     color: black;
-    grid-column: span 5;
+    grid-column: span 4;
     background-color: white;
     height: 100%;
     margin-left: 15px;
 }
 /* le style du liste */
-li{
+li {
     list-style: square;
 
 }
+
+
 /* le style du titre4 */
 
 h4{
@@ -47,22 +67,24 @@ h3{
     color: white;
    text-align: center;
 }
-/* le style du titre2 */
+/* le style du titre2*/
 h2{
     color:black;
     font-weight: bold;
     text-shadow: 0 0 3px black
     
 }
-/* le style du photo */
+/* le style du photo:
+ la largeur du photo est 100%, aligner au centre et arrondis à 50%*/
 
 .photo{
     width: 100%;
     text-align: center;
 }
 .photo img{
-    width: 50%;
-    border-radius: 50%;
+    padding: 10px;
+    width: 80%;
+    border-radius: 50% ;
     
     
 }
@@ -95,30 +117,11 @@ h2{
 
 
 
+
 /* les Media Querries*/
-@media screen and (max-width:823px){
-    .right-title::after{
-        width: 40%;
-    }
-}
-@media screen and (max-width:681px){
-    .right-title::after{
-        width: 30%;
-    }
-}
-@media screen and (max-width:780px){
-    .timeline{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-@media screen and (max-width:780px){
-    .left-section{
-        grid-column: span 3;
-    }
-    .right-section{
-        grid-column: span 4;
-    }
-}
+
+/* Gros appareils (ordinateurs de bureau)
+ */
 @media screen and (max-width:1200px){
     .main{
         grid-template-columns: repeat(1, 1fr);
@@ -130,10 +133,51 @@ h2{
 @media screen and (max-width:700px){
     .photo img{
         width: 60%;
+    
+    }
+    body{
+        font-size: 10px;
     }
 }
-@media screen and (max-width:390px){
-    .name{
-        font-size: 1.5rem;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 210mm;
+        min-height: 297mm;
+       
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     }
 }
+/* Pour les téléphones mobiles : */
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 10px;
+    }
+    hr{
+       margin: 30px; 
+    }
+    
+    .left-section{
+       margin: 0;
+        grid-column: span 3;
+        
+       
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+    body{
+        width: 210mm;
+        min-height: 297mm;
+       
+        border: 1px #D3D3D3 solid;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+

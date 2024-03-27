@@ -5,7 +5,7 @@ body{
     min-height: 297mm;
     border: 1px #D3D3D3 solid;
     border-radius: 5px;
-    background: white;
+    background: gray;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     
     
@@ -41,6 +41,7 @@ main{
     grid-column: span 3;
     height: 100%;
     background-color: #417694;
+    padding: 5px;
 }
 /* le style de la section droite:
 couleur des ecriture en noir, la hauteur à 100%,couleur de l'arrière plan en banche 
@@ -50,7 +51,8 @@ et grid colonne pour specifie la taile de la colonne */
     grid-column: span 4;
     background-color: white;
     height: 100%;
-    margin-left: 15px;
+    padding: 5px;
+    /* margin-left: 15px; */
 }
 /* le style du liste */
 li {
@@ -101,7 +103,7 @@ h2{
 }
 /* le style de la barre de progression */
 
-.progress-bar{
+/* .progress-bar{
     width: 50%;
     height: .4rem;
     background-color: black;
@@ -114,8 +116,14 @@ h2{
     left: 0;
     background-color: white;
     border-radius: 12px;
+} */
+
+progress [value] {
+    color: black;
+    background: white;
+
 }
-.fr-progress{
+/* .fr-progress{
     width: 70%;
 }
 .br-progress{
@@ -124,7 +132,7 @@ h2{
 
 .en-progress{
     width: 40%;
-}
+} */
 
 
 

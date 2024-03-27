@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon cv</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,13 +21,13 @@
              <!-- debut du bloc Contact -->
             <div class="contact">
                 <h3>Contact</h3>
-                <ul id="con">
+                <ul>
                     <li>
-                        <i class="fa fa-phone"></i>
+                       <img src="telephone.png" alt="" style="width: 15px;">
                         +223 74688429 </li>
-                    <li> <i class="fa fa-envelope"></i>
+                    <li> <img src="mail.png" alt="" style="width: 15px;">
                         mariamedaou044@gmail.com</li>
-                    <li>  <i class="fa fa-map-marker"></i>
+                    <li> <img src="localisation.png" alt="" style="width: 15px;">
                         Bamako</li>
                 </ul>
             </div>
@@ -37,10 +37,10 @@
             <!-- debut du bloc Réseaux -->
             <div class="reseau">
                 <h3>Réseaux</h3>
-                <ul id="re">
-                    <li><i class="fa fa-linkedin"></i>
+                <ul>
+                    <li><img src="linkedin.png" alt="" style="width: 20px;">
                         diabate</li>
-                    <li><i class="fa fa-instagram" ></i>
+                    <li><img src="intagram.png" alt="" style="width: 20px;">
                         chaka</li>
                 </ul>
             </div>
@@ -49,22 +49,26 @@
              <!-- debut du bloc Langues -->
             <div class="langues">
                 <h3>Langues</h3>
-                <ul id="la">
+                <ul>
                     <li>Français
-                        <div class="progress-bar">
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                        <!-- <div class="progress-bar">
                             <div class="progress fr-progress"></div>
-                        </div>
+                        </div> -->
                     </li>
                     
+                    
                     <li>Anglais
-                        <div class="progress-bar">
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                        <!-- <div class="progress-bar">
                             <div class="progress en-progress"></div>
-                        </div>
+                        </div> -->
                     </li>
                     <li>Bambara
-                        <div class="progress-bar">
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                        <!-- <div class="progress-bar">
                             <div class="progress br-progress"></div>
-                        </div>
+                        </div> -->
                     </li>
                 </ul>
 
@@ -76,7 +80,7 @@
              <!-- debut du bloc Loisirs -->
             <div class="loisirs">
                 <h3>Loisirs</h3>
-                <ul id="lo">
+                <ul>
                     <li>Lecture</li>
                     <li>Voyage</li>
                     <li>Pécher</li>
@@ -102,7 +106,7 @@
             <!-- debut du Experiences -->
             <div class="experiences">
                 <h4> Expériences Professionnelles</h4>
-                <ul id="ep">
+                <ul>
                     <li><strong> Orange-mali</strong>
                     <p>Développement de logiciel</p>
                     <p>Bamako 2022-2023</p>
@@ -123,7 +127,7 @@
             <!-- debut du Formations -->
             <div class="formation">
                 <h4>Formations</h4>
-                <ul id="for">
+                <ul>
                     <li><strong>2023: </strong>Faculté des sciences technique de Bamako
                     </li>
                     <li><strong>2021: </strong>Baccalauréat Malien 
@@ -137,10 +141,11 @@
             <!-- debut du competences -->
             <div class="competences">
                 <h4>Compétences</h4>
-                <ul id="com">
+                <ul>
                     <li>Les outils bureautiques</li>
                     <li>HTML, CSS, PHP</li>
                 </ul>
+               
 
             </div>
              <!-- fin du competences -->
